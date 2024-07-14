@@ -1,5 +1,6 @@
 var screen =document.querySelector("#screen");
 var btn = document.querySelectorAll(".btn");
+var equal = document.querySelector"("#eval");
 
 for(item of btn ){
  item.addEventListener('click', (e)=>{
@@ -11,6 +12,16 @@ for(item of btn ){
   screen.value+= btnValue;
  });
 }
+
+equal.addEventListener('click', ()=>{
+  try{
+   screen.value = eval(screen.value);
+  }
+ catch(error){
+  screen.value = "Error";
+ }
+ });
+
 function sin(){
     screen.value = Math.sin(screen.value);
 }
