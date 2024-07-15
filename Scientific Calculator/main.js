@@ -4,7 +4,6 @@ var equal = document.querySelector"("#eval");
 for(item of btn ){
  item.addEventListener('click', (e)=>{
   let btnValue = e.target.innerText;
-h
   if(btnValue == '÷'){
     btnValue = '/';
   }
