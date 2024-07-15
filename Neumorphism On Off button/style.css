@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    margin-bottom: 1.5rem;
+    background: linear-gradient(to right,#ff0000, #00ff0d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color:transparent;
+}
+button.btn{
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  font-size: 8.7rem;
+  color: red;
+  font-weight: 800;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 8px 8px 15px #d1d1d1, 
+                -8px -8px 15px #ffffff;
+  cursor: pointer;
+ }
+.btn.on{
+    color: rgb(0, 243, 73);
+    box-shadow: inset 8px 8px 15px #d1d1d1, 
+                inset -8px -8px 15px #ffffff;
+}
+.btn .circle {
+    position: absolute;
+    width: 17.5rem;
+    height: 17.5rem;
+    background-color: #e0e0e000;
+    border-radius: 50%;
+    top: 21px;
+    left: 21px;
+    box-shadow: 8px 8px 15px #bebebe, 
+                -8px -8px 15px #ffffff;
+    transition: all 0.2s ease-in-out;
+    border: 2px solid  rgb(243, 0, 0);
+
+}
+
+.btn.on .circle {
+    border: 2px solid  rgb(0, 243, 73);
+} 
