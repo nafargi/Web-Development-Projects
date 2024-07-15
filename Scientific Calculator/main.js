@@ -1,11 +1,10 @@
 var screen =document.querySelector("#screen");
 var btn = document.querySelectorAll(".btn");
 var equal = document.querySelector"("#eval");
-
 for(item of btn ){
  item.addEventListener('click', (e)=>{
   let btnValue = e.target.innerText;
-
+hhhhuhuhuhuhuh
   if(btnValue == '÷'){
     btnValue = '/';
   }
@@ -25,7 +24,7 @@ equal.addEventListener('click', ()=>{
 function sin(){
     screen.value = Math.sin(screen.value);
 }
-function cos(){
+function cos(){][[
     screen.value = Math.cos(screen.value);
 }
 function tan(){
