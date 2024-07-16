@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) =>{
-hh
+h
  const btnToggle = document.getElementById("btnToggle");
  const span = btnToggle.querySelector('span');
  const circle = btnToggle.querySelector('.circle');
