@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body{
+    background-color: rgb(3, 16, 4);
+    color: whitesmoke;
+}
+header{
+    position: relative;
+    width: 1140px;
+    max-width: 80%;
+    height: 50px;
+    margin: auto;
+    z-index: 1000;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+  width: 80px ;
+  margin-right: 3.5rem;
+}
+a{  color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 12px;
+    margin-right: 5px;
+    padding: 2px 8px;
+    transition: .8s ease;
+}
+
+a.active{
+    background-color: rgb(0, 255, 204);
+    border-radius: 1.5px;
+    color: rgb(0, 0, 0);
+}
+a:hover{
+    background-color: rgb(0, 255, 204);
+    border-radius: 1.5px;
+    color: rgb(0, 0, 0);
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    margin-top: -50px;
+    overflow: hidden;
+    position: relative;
+}
+
+.container .class-list .list{
+    position: absolute;
+    inset: 0 0 0 0;
+    width: 100%;
+    height: 100%;
+}
+.container .class-list .list img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .class-list .list .content{
+    position: absolute;
+    max-width: 80%;
+    width: 1140px;
+    top: 20%;
+    left: 50%;
+    box-sizing: border-box;
+    transform: translateX(-50%);
+    padding-right: 30%;
+    color: #fff;
+    text-shadow: 0 5px 10px #0004; 
+}
+
+.container .class-list .list .content .col1 .title,
+.container .class-list .list .content .col1 .type{
+    font-weight: bold;
+    line-height: 1.2em;
+}
+.container .class-list .list .col2 .button{
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+    grid-template-rows: 40px;
+    gap: 5px;
+    margin-top: 20px;
+}
+.container .class-list .list .button button{
+    border: none;
+    background-color: #eee;
+    font-family: Poppins;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.4s;
+    letter-spacing: 2px;
+}
+
+
+.container .class-list .list .button button:hover{
+    letter-spacing: 3px;
+}
+.container .class-list .list .button button:nth-child(2){
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #eee;
+}
+
+.container .class-list .list .content .col1 .title{
+    font-size: 70px;
+    text-wrap: nowrap;
+}
+.container .class-list .list .content .col1 .type{
+    font-size: 55px;
+    color: rgb(0, 255, 204) ;
+}
+.container .class-list .list .content .col1 .description{
+    font-size: 13px;
+}
+
+/* buttom */
+.col2 button{
+    font-size: 15px;
+    border: none;
+    padding: 5px 25px;
+    border-radius: 2px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: .5s ease-in;
+}
+.col2 button:hover{
+    letter-spacing: 1px;
+    border: 1.5px solid rgb(0, 255, 204);
+}
+
+
+.side-img {
+    position: absolute;
+    bottom: 50px;
+    left: 45%;
+    width: max-content;
+    display: flex;
+    gap: 20px;
+    z-index: 100;
+}
+.side-img .list {
+    width: 150px;
+    height: 220px;
+    flex-shrink: 0;
+    position: relative;
+}
+.side-img .list img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 5px 0 15px -1px rgba(0, 0, 0, 0.3);
+}
+
+.arrows{
+    position: absolute;
+    top: 80%;
+    right: 52%;
+    z-index: 100;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.arrows button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(0, 255, 204);
+    border: none;
+    color: #000000;
+    font-family: monospace;
+    font-weight: bold;
+    transition: .5s;
+    cursor: pointer;
+}
+.arrows button:hover{
+    background-color: #effb08;
+    color: #000;
+}
+
+
+/* Animation Part */
+.container .class-list .list:nth-child(1){
+    z-index: 1;
+}
+
+
+/* animation text in first item */
+.container .class-list .list:nth-child(1) .content .title,
+.container .class-list .list:nth-child(1) .content .type,
+.container .class-list .list:nth-child(1) .content .description,
+.container .class-list .list:nth-child(1) .content .buttons
+{
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent .5s 1s linear 1 forwards;
+}
+@keyframes showContent{
+    to{
+        transform: translateY(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+.container .class-list .list:nth-child(1) .content .title{
+    animation-delay: 0.4s !important;
+}
+.container .class-list .list:nth-child(1) .content .type{
+    animation-delay: 0.6s !important;
+}
+.container .class-list .list:nth-child(1) .content .description{
+    animation-delay: 0.8s !important;
+}
+.container .class-list .list:nth-child(1) .content .buttons{
+    animation-delay: 1s !important;
+}
+
+
+
+
+/* Animation for next button click */
+.container.next .class-list .list:nth-child(1) img{
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    border-radius: 30px;
+    animation: showImage .5s linear 1 forwards;
+}
+
+@keyframes showImage{
+    to{
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+
+.container.next .side-img .list:nth-last-child(1){
+    overflow: hidden;
+    animation: showThumbnail .5s linear 1 forwards;
+}
+.container.prev .class-list .list img{
+    z-index: 100;
+}
+
+
+@keyframes showThumbnail{
+    from{
+        width: 0;
+        opacity: 0;
+    }
+}
+
+
+.container.next .side-img{
+    animation: effectNext .5s linear 1 forwards;
+}
+
+@keyframes effectNext{
+    from{
+        transform: translateX(150px);
+    }
+}
+
+
+
+/* Animation for prev button click */
+.container.prev .class-list .list:nth-child(2){
+    z-index: 2;
+}
+
+.container.prev .class-list .list:nth-child(2) img{
+    animation: outFrame 0.5s linear 1 forwards;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+@keyframes outFrame{
+    to{
+        width: 150px;
+        height: 220px;
+        bottom: 50px;
+        left: 50%;
+        border-radius: 20px;
+    }
+}
+
+.container.prev .side-img .list:nth-child(1){
+    overflow: hidden;
+    opacity: 0;
+    animation: showThumbnail .5s linear 1 forwards;
+}
+.container.next .arrows button,
+.container.prev .arrows button{
+    pointer-events: none;
+}
+
+
+.container.prev .class-list .list:nth-child(2) .content .title,
+.container.prev .class-list .list:nth-child(2) .content .type,
+.container.prev .class-list .list:nth-child(2) .content .description,
+.container.prev .class-list .list:nth-child(2) .content .buttons
+{
+    animation: contentOut 1.5s linear 1 forwards!important;
+}
+
+@keyframes contentOut{
+    to{
+        transform: translateY(-150px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+@media screen and (max-width: 678px) {
+    .container .class-list .list .content{
+        padding-right: 0;
+    }
+    .container .class-list .list .content .title{
+        font-size: 50px;
+    }
+}
