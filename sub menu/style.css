@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+    font-family: 'Figtree', sans-serif;
+    line-height: 1.5;
+}
+
+body{
+    background-color: #E8E8E8;
+}
+.hero{
+   height: 50vh;
+   background-color: #151618;
+   padding-top: 3rem;
+}
+#main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+}
+img{
+    width: 75px;
+    display: block;
+}
+nav ul{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #A1A2A3;
+    display: inline-block;
+    padding: 1.5rem 0;
+}
+nav ul a:hover {
+    color: #E8E8E8;
+}
+nav ul a:hover::after {
+    opacity: 1;
+}
+
+.sub-menu {
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   gap: .5rem;
+ 
+}
+.sub-menu ul{
+    position: absolute;
+    flex-direction: column;
+    top: 100%;
+    left: -2rem;
+    background-color: #212224;
+    border-radius: 10px;
+    padding: 12px;
+    gap: 0;
+    display: none;
+  
+}
+.sub-menu ul a{
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+    min-width: 15rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    transition:  .5s ease;
+}
+.sub-menu:hover ul{
+    display: block;
+}
+
+.sub-menu ul a:hover{
+    background-color: #2C2D2F;
+	padding-left: 12px;
+    color: #E8E8E8;
+}
+.sub-menu::after {
+    position: relative;
+    content: url('icon/icon-arrow-down.svg');
+    opacity: .6;
+    height: 25px;
+    
+}
+.sub-menu ul a::after {
+    position: absolute;
+    content: url('icon/icon-arrow-right.svg');
+    height: 17px;
+    opacity: 0;
+    left: 200px;
+}
+.sub-menu ul a:hover::after {
+    opacity: 1;
+}
+.sub-menu:hover::after {
+    opacity: 1;
+}
+.sub-menu:hover > a {
+    color: #E8E8E8;
+}
+button{
+  padding: 1rem;
+  border-radius: 2rem;
+  background-color: transparent;
+  color: #ffe120;
+  border: 1px solid #0a1df3;
+  border-radius: 10rem;
+  padding: .75rem 1.5rem;
+cursor: pointer;
+}
