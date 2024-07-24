@@ -1,4 +1,6 @@
-# Animated Imaged Slider HTML CSS & JavaScript 
-## Animated Carousel Design
+# Mini Responsive Webpage
 
-<img src="./image/Image Slider using HTML CSS and JavaScript.png">
+<img src="./img/png1-min.png">
+<img src="./img/png2-min.png">
+<img src="./img/png3-min.png">
+<img src="./img/png4-min.png">
