@@ -1,7 +1,7 @@
 
 let nextBtn = document.querySelector('.next')
 let prevBtn = document.querySelector('.prev')
-oo
+o
 let slider = document.querySelector('.container')
 let sliderList = slider.querySelector('.container .class-list')
 let thumbnail = document.querySelector('.container .side-img')
