@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: 'Poppin', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    overflow: hidden;
+    padding: 2%;
+}
+ul{
+   
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+ul a{
+    text-decoration: none;
+    font-weight: 100;
+    text-wrap: nowrap;
+}
+ul li{
+    padding: 2% 5%;
+    border-radius: 10px;
+    transition: all .5s ease-in;
+}
+ul li:hover{
+    background-color: rgb(72, 72, 255);
+   
+}
+.logo{
+    position: absolute;
+    top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+}
+button{
+    position: relative;
+    width: 10rem;
+    height: 2.75rem;
+    font-size: 1.025rem;
+    border: 1px solid rgb(44, 44, 255);
+    border-radius: 20px;
+    background: transparent;
+    transition: all .5s ease;
+}
+button:hover{
+    border: 1px solid rgb(160, 255, 44);
+   box-shadow:inset 5px 5px 5px 1px rgb(36, 42, 2);
+   background-color: rgb(186, 216, 14);
+   color: rgb(0, 0, 0);
+}
+.hero{
+    margin-top: 10%;
+    position: relative;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 2.75em;
+    z-index: 10;
+}
+.hero h3{
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+.main{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.087);
+    width: 50%;
+    height: 45%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    border-radius: 5px;
+    backdrop-filter: blur(35px);
+    z-index: 1;  
+}
+.bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.container::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 2, 25, 0.452);
+
+}
+.bg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.social-link {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    gap: 2rem;
+    font-size: 2rem;
+}
+.main i{
+    font-size: 5rem;
+}
+
+@media (max-width: 850.98px) {
+
+ul{ 
+    display: none;
+}
+.hero{
+    font-size: clamp(.5rem,2rem,3rem) !important;
+}
+.main{
+    padding: 2% 5%;
+   grid-template-columns: repeat(2,1fr);
+   gap: 1rem;
+}
+.main i{
+    font-size: clamp(.8rem,3rem,3rem);
+}
+}
