@@ -5,7 +5,6 @@ let slider = document.querySelector('.container')
 let sliderList = slider.querySelector('.container .class-list')
 let thumbnail = document.querySelector('.container .side-img')
 let thumbnailItems = thumbnail.querySelectorAll('.list')
-
 thumbnail.appendChild(thumbnailItems[0])
 nextBtn.onclick = function(){
     moveSlider('next')
