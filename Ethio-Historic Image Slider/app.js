@@ -1,4 +1,3 @@
-
 let nextBtn = document.querySelector('.next')
 let prevBtn = document.querySelector('.prev')
 let slider = document.querySelector('.container')
