@@ -1,2 +1,2 @@
-# TRavel Laning Page HTML CSS 
+# Travel Laning Page HTML CSS 
 <img src="./img/img.png">
