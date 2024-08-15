@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- googel font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/5e2596b2c7.js" crossorigin="anonymous"></script>
+    <title>Bag Collection</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <header>
+                <div class="logo">
+                    <div class="logo-img">
+                        <img src="img/circle-user.png" alt="">
+                    </div>
+                    
+                    <p>Olivia Wilson</p>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">Cart</a></li>
+                        <li><a href="#">Pre order</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="middle">
+                <div class="title">
+                    <h1>Our New Collection</h1>
+                    <div class="input-class">
+                        <input type="text" id="myInput" placeholder="Search...   "  >
+                        <img src="img/search.png" alt="" class="search">  
+                    </div>
+                   
+                </div>
+               
+                <div class="bg-middle">
+                    <img src="img/bg.png" alt="">
+                </div>
+            </div>
+
+            <div class="third">
+                <div class="collection">
+                    <button>New Collection</button>
+                    <button>Special Promo</button>
+                    <button>Casual Bag</button>
+                    <button>Party Bag</button>
+                </div>
+
+                <div class="bag">
+                    <div class="bag-img">
+                       <img src="img/img2.png" alt="">
+                    </div>
+                    <p>Beige Casual Bag</p>
+                    <div class="title">
+                        <h3>$67.67</h3>
+                        <button>
+                            <div class="btn">
+                                <img src="img/shopping-bag.png" alt="">
+                                <p>Add</p>
+                            </div>
+                        </button>                    </div>
+                </div>
+
+                <div class="bag">
+                    <div class="bag-img">
+                        <img src="img/img1.png" alt="">
+                    </div>
+                
+                    <p>Brown Casual Bag </p>                    
+                    <div class="title">
+                        <h3>$67.67</h3>
+                       <button>
+                            <div class="btn">
+                                <img src="img/shopping-bag.png" alt="">
+                                <p>Add</p>
+                            </div>
+                        </button>                    </div>
+                </div>
+
+                <div class="bag">
+                <div class="bag-img">
+                    <img src="img/img3.png" alt="">
+                </div>
+                    <p>Orange Casual Bag</p>
+                    <div class="title">
+                        <h3>$67.67</h3>
+
+                        <button>
+                            <div class="btn">
+                                <img src="img/shopping-bag.png" alt="">
+                                <p>Add</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg">
+            <img src="img/bg.png" alt="">
+        </div>
+    </div>
+
+    <script>
+        const input = document.getElementById('myInput');
+        const container = input.parentElement;
+
+        input.addEventListener('focus', () => {
+            container.classList.add('focused');
+        });
+
+        input.addEventListener('blur', () => {
+            container.classList.remove('focused');
+        });
+    </script>
+</body>
+</html>
