@@ -13,7 +13,6 @@ nextBtn.onclick = function(){
 prevBtn.onclick = function(){
     moveSlider('prev')
 }
-
 function moveSlider(direction){
    let sliderItems = sliderList.querySelectorAll('.list')
    let thumbnailItems = document.querySelectorAll('.side-img .list')
