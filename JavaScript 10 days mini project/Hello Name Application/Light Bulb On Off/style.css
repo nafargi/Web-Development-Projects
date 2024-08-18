@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    background: #0a0a0a;
+}
+body.on{
+    background: radial-gradient(#555,#111);
+}
+.wire{
+    position: absolute;
+    top: 0;
+    left: calc(50%-2px);
+    bottom: 50%;
+    width: 35px;
+    height: 40vh;
+    background: rgb(57, 34, 34);
+    box-shadow:inset 15px 0px 16px 0.2px rgb(15, 11, 11);
+    z-index: 1;
+}
+.on .wire{
+    background: rgb(48, 31, 31);
+    box-shadow:inset 5px -5px 12px 1px rgba(177, 169, 59, 0.845);
+}
+.bulb{
+    position: relative;
+    z-index: 2;
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    font-size: 12.9rem;
+    border-radius: 50%;
+    color: #444;
+    transform: translate(-87%,78%) rotate(180deg);
+}
+.bulb i{
+    position: absolute;
+    transform: translate(20%,0%) ;
+
+   
+}
+.switch{
+    position: absolute;    
+    top: 60px;
+    right: 100px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #efefef;
+    z-index: 1;
+     border: 2.3px solid #fff;
+    box-shadow: 0px 3px 18px 3px rgba(98, 98, 98, 0.587);
+    cursor: pointer;
+    
+}
+.switch i{
+   font-size: 2.35rem;
+}
+.on .bulb{
+    background-color: #e5da004c;
+    box-shadow: 0px 0px 330px 10px  #e5e100e8;
+
+}
+.on .bulb i{
+    color: rgb(255, 208, 0);
+}
+.on .switch{
+    background: #00b11b;
+}
