@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', (event) =>{
  const circle = btnToggle.querySelector('.circle');
 
  btnToggle.addEventListener('click',() =>{
+  
     if(span.textContent === 'Off'){
        span.textContent = 'On';
        btnToggle.classList.add('on');
