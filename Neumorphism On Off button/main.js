@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', (event) =>{
        span.textContent = 'On';
        btnToggle.classList.add('on');
     }else{
+     
       span.textContent ='Off';
       btnToggle.classList.remove('on');
     }
