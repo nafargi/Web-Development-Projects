@@ -10,7 +10,6 @@ for(item of btn ){
   screen.value+= btnValue;
  });
 }
-
 equal.addEventListener('click', ()=>{
   try{
    screen.value = eval(screen.value);
