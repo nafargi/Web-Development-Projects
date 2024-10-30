@@ -18,7 +18,6 @@ equal.addEventListener('click', ()=>{
   screen.value = "Error";
  }
  });
-
 function sin(){
     screen.value = Math.sin(screen.value);
 }
